@@ -19,7 +19,7 @@ class SendEMail():
         asunto = "Test Envio Email"
         mensaje=  'Envio de un correo'
         message = """From: %s\nTo: %s\nSubject: %s\n\n%s
-        	    """ % (from_address, ", ".join(to_address), asunto, mensaje)
+        	    """ % (from_address, ", to_address, asunto, mensaje)
 
         #proceso de login sobre el servidor. Smtp únicamente, imap o pop no
         #porque no queremos recivirlos, unicamente enviar
